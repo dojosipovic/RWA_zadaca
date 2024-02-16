@@ -1,0 +1,73 @@
+$primary-font: "Arial", sans-serif;
+$primary-color: #333;
+$border-color: #ccc;
+$table-hover-color: #f5f5f5;
+
+@mixin centerImage {
+  display: block;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: $primary-font;
+}
+
+ul {
+  margin: 0 auto;
+  width: fit-content;
+  font-family: $primary-font;
+}
+
+p {
+  font-size: 18px;
+  color: $primary-color;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+img {
+  @include centerImage;
+}
+
+img[alt="Autor"] {
+  width: 200px;
+}
+
+img[alt="Model baze podataka"] {
+  margin-top: 20px;
+  width: 500px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: $primary-font;
+
+  th,
+  td {
+    border: 1px solid $border-color;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f0f0f0;
+  }
+
+  tbody tr:hover {
+    background-color: $table-hover-color;
+  }
+
+  tr:last-child {
+    td:first-child {
+      border-bottom-left-radius: 5px;
+    }
+
+    td:last-child {
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

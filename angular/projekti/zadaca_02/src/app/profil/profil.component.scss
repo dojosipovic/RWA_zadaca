@@ -1,0 +1,72 @@
+// Variables
+$primary-font: "Arial", sans-serif;
+$input-border-color: #ccc;
+$button-bg: #007bff;
+$button-hover-bg: #0056b3;
+
+// Header styles
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: $primary-font;
+}
+
+// Paragraph styles
+p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+// Form styles
+form {
+  font-family: $primary-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  label {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="checkbox"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid $input-border-color;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: $button-bg;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $button-hover-bg;
+    }
+  }
+}
+
+// Additional div styles
+div {
+  text-align: center;
+  margin-top: 20px;
+
+  p {
+    margin-bottom: 10px;
+    font-family: $primary-font;
+  }
+}

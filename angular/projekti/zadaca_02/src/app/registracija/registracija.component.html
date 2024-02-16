@@ -1,0 +1,29 @@
+<h3>Registracija</h3>
+<p>{{poruka}}</p>
+<form action="" id="registracija" (ngSubmit)="onSubmit($event)">
+  <label for="ime">Ime</label>
+  <input type="text" name="ime" id="ime" [(ngModel)]="korisnik.ime">
+  <br>
+  <label for="prezime">Prezime</label>
+  <input type="text" name="prezime" id="prezime" [(ngModel)]="korisnik.prezime">
+  <br>
+  <label for="korime">Korisničko ime</label>
+  <input type="text" name="korime" id="korime" [(ngModel)]="korisnik.korime">
+  <br>
+  <label for="lozinka">Lozinka</label>
+  <input type="password" name="lozinka" id="lozinka" [(ngModel)]="korisnik.lozinka">
+  <br>
+  <label for="email">email</label>
+  <input type="email" name="email" id="email" [(ngModel)]="korisnik.email">
+  <br>
+  <label for="drzava">Država</label>
+  <input type="text" name="drzava" id="drzava" [(ngModel)]="korisnik.drzava">
+  <br>
+  <label for="mjesto">Mjesto</label>
+  <input type="text" name="mjesto" id="mjesto" [(ngModel)]="korisnik.mjesto">
+  <br>
+  <label for="opis">Opis</label>
+  <input type="text" name="opis" id="opis" [(ngModel)]="korisnik.opis">
+  <br>
+  <button type="submit">Registriraj</button>
+</form>

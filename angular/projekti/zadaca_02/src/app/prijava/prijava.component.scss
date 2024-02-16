@@ -1,0 +1,73 @@
+$primary-font: "Arial", sans-serif;
+$input-border-color: #ccc;
+$button-bg: #007bff;
+$button-hover-bg: #0056b3;
+$input-width: 300px;
+
+p,
+form {
+  font-family: $primary-font;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  input[type="text"],
+  input[type="password"] {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: $input-width;
+    border-radius: 5px;
+    border: 1px solid $input-border-color;
+  }
+
+  button[type="submit"] {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: $button-bg;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: $button-bg;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+}
+
+div {
+  text-align: center;
+  margin-top: 20px;
+
+  p {
+    margin-bottom: 10px;
+    font-family: $primary-font;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: $primary-font;
+}

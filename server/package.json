@@ -1,0 +1,24 @@
+{
+	"name": "zadaca-2",
+	"version": "1.0.0",
+	"description": "",
+	"main": "./aplikacija/server.mjs",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"pripremi": "npm link --save express sqlite3 express-session cookie-parser cors jsonwebtoken totp-generator base32-encoding nodemailer",
+		"start": "node server.mjs konfiguracija.csv"
+	},
+	"author": "Dominik Josipović",
+	"license": "ISC",
+	"dependencies": {
+		"base32-encoding": "file:C:/Users/Dominik/AppData/Roaming/npm/node_modules/base32-encoding",
+		"cookie-parser": "file:C:/Users/Dominik/AppData/Roaming/npm/node_modules/cookie-parser",
+		"cors": "file:C:/Users/Dominik/AppData/Roaming/npm/node_modules/cors",
+		"express": "file:C:/Users/Dominik/AppData/Roaming/npm/node_modules/express",
+		"express-session": "file:C:/Users/Dominik/AppData/Roaming/npm/node_modules/express-session",
+		"jsonwebtoken": "file:C:/Users/Dominik/AppData/Roaming/npm/node_modules/jsonwebtoken",
+		"nodemailer": "file:C:/Users/Dominik/AppData/Roaming/npm/node_modules/nodemailer",
+		"sqlite3": "file:C:/Users/Dominik/AppData/Roaming/npm/node_modules/sqlite3",
+		"totp-generator": "file:C:/Users/Dominik/AppData/Roaming/npm/node_modules/totp-generator"
+	}
+}

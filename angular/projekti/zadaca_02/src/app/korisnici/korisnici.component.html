@@ -1,0 +1,22 @@
+<h3>Korisnici</h3>
+<p>{{poruka}}</p>
+<table *ngIf="korisnici.length > 0">
+  <tr>
+    <th>Ime</th>
+    <th>Prezime</th>
+    <th>Korisničko ime</th>
+    <th>Email</th>
+    <th>Država</th>
+    <th>Admin</th>
+    <th>Radnje</th>
+  </tr>
+  <tr *ngFor="let k of korisnici">
+    <td>{{k.ime}}</td>
+    <td>{{k.prezime}}</td>
+    <td>{{k.korime}}</td>
+    <td>{{k.email}}</td>
+    <td>{{k.drzava}}</td>
+    <td>{{k.admin !== 0 ? 'Da' : 'Ne'}}</td>
+    <td><button (click)="obrisiKorisnika(k.korime)">Obriši</button></td>
+  </tr>
+</table>

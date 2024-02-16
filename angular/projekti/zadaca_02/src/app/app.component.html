@@ -1,0 +1,14 @@
+<h2>djosipovi21 zadaca_02</h2>
+<nav>
+  <a *ngIf="prijava || github" routerLink="/pocetna">Početna</a>
+  <a *ngIf="!prijava && !github" routerLink="/prijava">Prijava</a>
+  <a *ngIf="prijava || github" routerLink="/dokumentacija">Dokumentacija</a>
+  <a *ngIf="prijava || github" routerLink="/favoriti">Favoriti</a>
+  <a *ngIf="prijava" routerLink="/profil">Profil</a>
+  <a *ngIf="admin && prijava" routerLink="/registracija">Registracija</a>
+  <a *ngIf="admin && prijava" routerLink="/korisnici">Korisnici</a>
+  <a *ngIf="prijava || github" routerLink="/odjava">Odjava</a>
+</nav>
+<main>
+  <router-outlet></router-outlet>
+</main>

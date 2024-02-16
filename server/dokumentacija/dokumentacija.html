@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>Dokumentacija</header>
+  <nav>#navigacija#</nav>
+  <main>
+    <img src="autor.jpeg" alt="slika autora" width="200">
+    <ul>
+      <li>Dominik Josipović</li>
+      <li>djosipovi21@foi.hr</li>
+      <li>Ime: Dominik</li>
+    </ul>
+    <a href="/dokumentacija/model_baze_dominik_josipovic.png">
+      <img src="model_baze_dominik_josipovic.png" alt="Model baze podataka" width="500">
+    </a>
+    <table border="1">
+      <thead>
+        <tr>
+          <th scope="row">Resurs<br>Parametri</th>
+          <th scope="row">GET<br>čitanje</th>
+          <th scope="row">POST<br>kreiranje</th>
+          <th scope="row">PUT<br>ažuriranje</th>
+          <th scope="row">DELETE<br>brisanje</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>baza/korisnici</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>baza/korisnici/{korime}</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>baza/korisnici/{korime}/prijava</td>
+          <td>napravljeno s /getJWT ali vraća jwt u tijelu</td>
+          <td>Koristi se pri pozivanju /prijava ali ne kreira on sesiju nego autentifikacija</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>baza/favoriti</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>baza/favoriti/{id}</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>baza/dnevnik</td>
+          <td>nije napravljeno</td>
+          <td>nije napravljeno</td>
+          <td>nije napravljeno</td>
+          <td>nije napravljeno</td>
+        </tr>
+      </tbody>
+    </table>
+    <table border="1">
+      <thead>
+        <tr>
+          <th scope="row">Uloga</th>
+          <th scope="row">Stranica/e</th>
+          <th scope="row">Opis</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gost</td>
+          <td>Početna</td>
+          <td>nije imeplentirano straničenje</td>
+        </tr>
+        <tr>
+          <td>Gost / Korisnik</td>
+          <td>SerijaDetalji</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>Gost</td>
+          <td>Dokumentacija</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>Gost</td>
+          <td>Prijava, Odjava</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>Korisnik</td>
+          <td>Profil</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>Korisnik</td>
+          <td>Favoriti</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>Korisnik</td>
+          <td>FavoritDetalji</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>Admin</td>
+          <td>Registracija</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>Admin</td>
+          <td>Korisnici</td>
+          <td>napravljeno</td>
+        </tr>
+        <tr>
+          <td>Admin</td>
+          <td>Dnevnik</td>
+          <td>nije napravljeno</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+
+</html>

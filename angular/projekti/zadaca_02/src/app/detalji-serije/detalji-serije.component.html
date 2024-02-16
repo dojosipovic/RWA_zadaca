@@ -1,0 +1,21 @@
+<p>{{poruka}}</p>
+<table *ngIf="serija != null">
+  <tr>
+    <th>Naziv</th>
+    <th>Opis</th>
+    <th>Broj sezona</th>
+    <th>Broj epizoda</th>
+    <th>Popularnost</th>
+    <th>Poster</th>
+    <th *ngIf="prijava || github">Radnje</th>
+  </tr>
+  <tr>
+    <td>{{serija.name}}</td>
+    <td>{{serija.overview}}</td>
+    <td>{{serija.number_of_seasons}}</td>
+    <td>{{serija.number_of_episodes}}</td>
+    <td>{{serija.popularity}}</td>
+    <td><img src="{{slikaUrl + serija.poster_path}}" height="300" width="200"></td>
+    <td *ngIf="prijava || github"><button (click)="dodajFavorit(serija.id)">Dodaj u favorite</button></td>
+  </tr>
+</table>

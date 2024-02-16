@@ -1,0 +1,70 @@
+$primary-font: "Arial", sans-serif;
+$primary-color: #000;
+$table-border-color: #ccc;
+$table-header-bg: #f0f0f0;
+$table-hover-color: #ffd700;
+$button-bg: #007bff;
+$button-hover-bg: #0056b3;
+
+@mixin buttonStyles {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid $table-border-color;
+  border-radius: 5px;
+  background-color: $button-bg;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+}
+
+p {
+  font-size: 18px;
+  color: $primary-color;
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $table-hover-color;
+  font-family: $primary-font;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: $primary-font;
+
+  th,
+  td {
+    border: 1px solid $table-border-color;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: $table-header-bg;
+  }
+
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  button {
+    @include buttonStyles;
+  }
+
+  tr:last-child {
+    td:first-child {
+      border-bottom-left-radius: 5px;
+    }
+
+    td:last-child {
+      border-bottom-right-radius: 5px;
+    }
+  }
+}

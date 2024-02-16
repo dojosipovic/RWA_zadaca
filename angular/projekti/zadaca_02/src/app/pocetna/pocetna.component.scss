@@ -1,0 +1,88 @@
+$primary-font: "Arial", sans-serif;
+$input-border-color: #ccc;
+$button-bg: #f0f0f0;
+$button-hover-bg: #e0e0e0;
+$table-border-color: #ccc;
+$table-header-bg: #f0f0f0;
+$link-bg: #007bff;
+$link-hover-bg: #0056b3;
+$link-color: #fff;
+$even-row-bg: #f9f9f9;
+$odd-row-bg: #e9e9e9;
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: $primary-font;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid $input-border-color;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 20%;
+  font-family: $primary-font;
+}
+
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid $input-border-color;
+  border-radius: 5px;
+  margin-right: 5px;
+  background-color: $button-bg;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-bg;
+  }
+}
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-top: 20px;
+  font-family: $primary-font;
+
+  th,
+  td {
+    border: 1px solid $table-border-color;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: $table-header-bg;
+  }
+
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: $link-bg;
+    color: $link-color;
+    display: inline-block;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+      background-color: $link-hover-bg;
+      color: $link-color;
+    }
+  }
+
+  tr:nth-child(even) {
+    background-color: $even-row-bg;
+  }
+
+  tr:nth-child(odd) {
+    background-color: $odd-row-bg;
+  }
+}

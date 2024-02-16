@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <title>Registracija</title>
+    <meta charset="UTF-8">
+    <script src="/js/funkcije.js"></script>
+    <script src="/js/registracija.js"></script>
+</head>
+
+<body>
+    <header>Registracija</header>
+    <nav>#navigacija#</nav>
+    <main>
+        <div id="poruka">#poruka#</div>
+        <form action="/registracija" method="POST" id="registracija">
+            <label for="ime">Ime</label>
+            <input type="text" name="ime" id="ime">
+            <br>
+            <label for="prezime">Prezime</label>
+            <input type="text" name="prezime" id="prezime">
+            <br>
+            <label for="korime">Korisničko ime</label>
+            <input type="text" name="korime" id="korime">
+            <br>
+            <label for="lozinka">Lozinka</label>
+            <input type="password" name="lozinka" id="lozinka">
+            <br>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email">
+            <br>
+            <label for="drzava">Država</label>
+            <input type="text" name="drzava" id="drzava">
+            <br>
+            <label for="mjesto">Mjesto</label>
+            <input type="text" name="mjesto" id="mjesto">
+            <br>
+            <label for="opis">Opis</label>
+            <input type="text" name="opis" id="opis">
+            <br>
+            <input type="submit" value="Registriraj">
+        </form>
+    </main>
+    <footer></footer>
+</body>
+
+</html>

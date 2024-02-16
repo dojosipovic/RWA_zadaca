@@ -1,0 +1,36 @@
+<h3>Favoriti</h3>
+<p>{{poruka}}</p>
+<table *ngIf="favoriti.length > 0">
+  <tr>
+    <th>Naziv</th>
+    <th>Opis</th>
+    <th>Slika</th>
+    <th>Radnje</th>
+  </tr>
+  <tr *ngFor="let s of favoriti">
+    <td>{{s.naziv}}</td>
+    <td>{{s.opis}}</td>
+    <td><img src="{{slikaUrl + s.slika}}" height="300" width="200" [alt]="s.naziv"></td>
+    <td>
+      <button (click)="ukloniFavorit(s.tmdb_id)">Ukloni</button>
+      <button (click)="prikaziDetalje(s.tmdb_id)">Detalji</button>
+    </td>
+  </tr>
+</table>
+<table *ngIf="favoritigithub.length > 0">
+  <tr>
+    <th>Naziv</th>
+    <th>Opis</th>
+    <th>Slika</th>
+    <th>Radnje</th>
+  </tr>
+  <tr *ngFor="let s of favoritigithub">
+    <td>{{s.name}}</td>
+    <td>{{s.overview}}</td>
+    <td><img src="{{slikaUrl + s.poster_path}}" height="300" width="200" [alt]="s.name"></td>
+    <td>
+      <button (click)="ukloniGithubFavorit(s.id)">Ukloni</button>
+      <button (click)="prikaziDetalje(s.id)">Detalji</button>
+    </td>
+  </tr>
+</table>

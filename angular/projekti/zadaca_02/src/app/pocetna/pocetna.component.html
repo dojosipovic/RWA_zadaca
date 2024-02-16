@@ -1,0 +1,24 @@
+<h3>Početna</h3>
+<input type="text" placeholder="Kljucne rijeci" [(ngModel)]="filter" (keyup)="pretrazi()">
+<br>
+<button *ngIf="btnPrethodno" (click)="stranici(1)">&lt;&lt;</button>
+<button *ngIf="btnPrethodno" (click)="stranici(str - 1)">&lt;</button>
+<button *ngIf="btnTrenutno" (click)="stranici(str)">{{str}}/{{ukupno}}</button>
+<button *ngIf="btnSljedece" (click)="stranici(str + 1)">&gt;</button>
+<button *ngIf="btnSljedece" (click)="stranici(ukupno)">&gt;&gt;</button>
+<table *ngIf="serije.length > 0">
+  <tr>
+    <th>Naziv</th>
+    <th>Opis</th>
+    <th>Slika</th>
+    <th>Radnje</th>
+  </tr>
+  <tr *ngFor="let s of serije">
+    <td>{{s.name}}</td>
+    <td>{{s.overview}}</td>
+    <td><img src="{{slikaUrl + s.poster_path}}" height="300" width="200"></td>
+    <td>
+      <a [routerLink]="['/detalji', s.id]">Detalji</a>
+    </td>
+  </tr>
+</table>

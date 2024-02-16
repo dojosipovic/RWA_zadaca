@@ -1,0 +1,56 @@
+$primarni-font: "Arial", sans-serif;
+$primarna-boja: #333;
+$tablica-obrub-boja: #ccc;
+$tablica-zaglavlje-bg: #f0f0f0;
+
+@mixin tablicaStil {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: $primarni-font;
+  margin-bottom: 30px;
+
+  th,
+  td {
+    border: 1px solid $tablica-obrub-boja;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: $tablica-zaglavlje-bg;
+  }
+
+  img {
+    max-width: 200px;
+    height: auto;
+  }
+
+  tr:last-child {
+    td:first-child {
+      border-bottom-left-radius: 5px;
+    }
+
+    td:last-child {
+      border-bottom-right-radius: 5px;
+    }
+  }
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: $primarni-font;
+}
+
+p {
+  font-size: 18px;
+  color: $primarna-boja;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: $primarni-font;
+}
+
+table {
+  @include tablicaStil;
+}

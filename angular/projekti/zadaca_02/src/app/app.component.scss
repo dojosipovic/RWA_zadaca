@@ -1,0 +1,41 @@
+$primary-color: #333;
+$secondary-color: #fff;
+$hover-bg-color: #fff;
+$hover-text-color: #333;
+$heading-bg-color: #f0f0f0; /* New variable for heading background color */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $primary-color;
+  padding: 10px;
+  border-radius: 5px;
+
+  a {
+    text-decoration: none;
+    color: $secondary-color;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: $hover-bg-color;
+      color: $hover-text-color;
+    }
+  }
+
+  /* Adjust styles for specific links */
+  a.routerLink-active {
+    font-weight: bold;
+    /* Style for the active link */
+  }
+}
+
+h2 {
+  text-align: center;
+  background-color: $heading-bg-color;
+  padding: 10px;
+  border-radius: 5px;
+  color: $primary-color; /* Adjust text color for visibility */
+}

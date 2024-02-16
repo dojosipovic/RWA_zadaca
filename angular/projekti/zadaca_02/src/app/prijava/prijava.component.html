@@ -1,0 +1,16 @@
+<h3>Prijava</h3>
+<p>{{poruka}}</p>
+<form action="" (ngSubmit)="onSubmit($event)">
+  <input type="text" placeholder="korime" [(ngModel)]="korime" name="korime">
+  <br>
+  <input type="password" [(ngModel)]="lozinka" name="lozinka" placeholder="lozinka">
+  <br>
+  <input type="text" [(ngModel)]="totp" name="lozinka" placeholder="TOTP">
+  <br>
+  <button type="submit">Prijava</button>
+</form>
+<button (click)="redirekt()">GitHub</button>
+<div>
+  <p>obican:rwa</p>
+  <p>admin:rwa</p>
+</div>
